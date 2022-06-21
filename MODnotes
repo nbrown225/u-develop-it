@@ -1,0 +1,49 @@
+DATABASE
+    a collection of interrelated data. this data is stored in 1 or more tables
+
+TABLE 
+    made up of rows and columns. 
+        columns - field
+        rows - record
+
+Query
+    a request for data from database table or combination of tables
+
+
+INITIALIZE MYSQL 
+at root directory of project
+mysql -u root -p
+
+The MySQL Shell enables us to create and delete databases, tables, table records, and queries to MySQL.
+
+CREATE DATABASE
+CREATE DATABASE <database name>;
+USE election;
+DESCRIBE candidates;
+
+INSERT INTO candidates (first_name) (last_name)...;  
+VALUES ('Bobby', Frankenheimer, ....);
+
+SELECT * FROM candidates;
+SELECT first_name, last_name FROM candidates;
+
+SELECT first_name, industry_connected
+FROM candidates
+WHERE industry_connected = 1;
+
+DROP DATABASE election;
+    DROP IS PERMANENT
+
+
+VARCHAR
+    Variable chaacter
+BOOLEAN
+    0 FALSE
+    1 TRUE
+PRIMARY KEY
+    each value in the column must be unique
+AUTO INCREMENT
+    increases each row and assigns new unique value
+NOT NULL
+    records must have a value
+
